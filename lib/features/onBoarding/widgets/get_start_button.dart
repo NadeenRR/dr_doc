@@ -1,6 +1,7 @@
 import 'package:dr_doc/core/theme/color.dart';
 import 'package:dr_doc/core/theme/style.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GetStartingButton extends StatelessWidget {
   const GetStartingButton({super.key});
@@ -13,7 +14,7 @@ class GetStartingButton extends StatelessWidget {
         backgroundColor: MaterialStateProperty.all(ColorManager.mainBlue),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         maximumSize: MaterialStateProperty.all(
-          const Size(double.infinity, 55),
+          Size(double.infinity, 50.h),
         ),
         shape: MaterialStateProperty.all(
           RoundedRectangleBorder(
